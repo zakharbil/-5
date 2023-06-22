@@ -1,5 +1,4 @@
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -11,19 +10,39 @@
   margin: -10px;
 }
 
+[class^="col-"] {
+  padding: 10px;
+}
+
 .col-12 {
   width: 100%;
-  padding: 10px;
 }
 
 .col-6 {
   width: 50%;
-  padding: 10px;
 }
 
 .col-4 {
   width: 33.33%;
-  padding: 10px;
 }
 
 /* Додайте решту стилів за необхідністю */
+
+/* Приклад стилів для адаптації до макету tablet.png */
+@media (max-width: 992px) {
+  .col-4,
+  .col-6,
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/* Приклад стилів для адаптації до макету mobile.png */
+@media (max-width: 768px) {
+  .col-4,
+  .col-6,
+  .col-12 {
+    width: 100%;
+  }
+}
+
